@@ -7,14 +7,14 @@ namespace ExercicioCSharpHeranca2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the number of products: ");
+            Console.Write("Enter the number of products: ");
             int n = int.Parse(Console.ReadLine());
 
             List<Product> products = new List<Product>();
 
             for (int i = 0; i < n; i++) 
             {
-                Console.WriteLine("Product #1 data: ");
+                Console.WriteLine($"Product #{i + 1} data: ");
                 Console.Write("Common, Used or Imported (c/u/i)? ");
                 char type = char.Parse(Console.ReadLine());
 

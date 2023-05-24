@@ -18,7 +18,7 @@ namespace ExercicioCSharpHeranca2.Entities
 
         public override string PriceTag() 
         {
-            return $"(used) $ {base.PriceTag()} (Manufacture date: {ManufactureDate.ToString("dd/MM/yyy")})";
+            return $"(used) {base.PriceTag()} (Manufacture date: {ManufactureDate.ToString("dd/MM/yyy")})";
         }
     }
 }
